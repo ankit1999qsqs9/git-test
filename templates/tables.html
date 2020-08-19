@@ -1,0 +1,348 @@
+<html>
+
+<head>
+    <title> HTML Tables</title>
+    <meta name="viweport">
+    <style>
+        table {
+            width: 100%;
+        }
+        
+        thead {
+            background-color: black;
+            color: white;
+        }
+        
+        tbody {
+            background-color: gray;
+            color: black;
+        }
+        
+        tfoot {
+            background-color: blanchedalmond;
+            color: black;
+        }
+        
+        th,
+        td {
+            font-size: 30px;
+            padding: 5px;
+            margin: 2px;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            text-align: center;
+        }
+        
+        table#t01 tr:nth-child(even) {
+            background-color: lightpink;
+            color: black;
+        }
+        
+        table#t01 tr:nth-child(odd) {
+            color: black;
+            background-color: rgb(112, 131, 60);
+        }
+        
+        table#t01 th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Table with caption</h1>
+    <table>
+        <caption>STUDENTS DETAILS</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>DOB</th>
+        </tr>
+        <tr>
+            <td>Aritra</td>
+            <td>19</td>
+            <td>11-12-2001</td>
+        </tr>
+        <tr>
+            <td>Harshit</td>
+            <td>17</td>
+            <td>11-12-2003</td>
+        </tr>
+        <tr>
+            <td>Mtj</td>
+            <td>22</td>
+            <td>11-12-1998</td>
+        </tr>
+    </table>
+    <h1>Table with row span</h1>
+    <table>
+        <tr>
+            <th colspan="5">Student details</th>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+            <td>Aritra</td>
+            <td>Harshit</td>
+            <td>Mtj</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>19</td>
+            <td>17</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <th>DoB</th>
+            <td>11-12-2001</td>
+            <td>11-12-2003</td>
+            <td>11-12-1998</td>
+        </tr>
+        <tr>
+            <th rowspan="2">phone</th>
+            <td>9005367604</td>
+            <td>147852936</td>
+            <td>7418523697</td>
+        </tr>
+        <tr>
+            <td>9545887655</td>
+            <td>481548555</td>
+            <td>7896541235</td>
+        </tr>
+    </table>
+    <h1>Table with column span</h1>
+    <table>
+        <tr>
+            <th colspan="5">Student details</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>DOB</th>
+            <th colspan="2">phone</th>
+        </tr>
+        <tr>
+            <td>Aritra</td>
+            <td>19</td>
+            <td>11-12-2001</td>
+            <td>9005367604</td>
+            <td>9545887655</td>
+        </tr>
+        <tr>
+            <td>Harshit</td>
+            <td>17</td>
+            <td>11-12-2003</td>
+            <td>147852936</td>
+            <td>481548555</td>
+        </tr>
+        <tr>
+            <td>Mtj</td>
+            <td>22</td>
+            <td>11-12-1998</td>
+            <td>7418523697</td>
+            <td>7896541235</td>
+        </tr>
+    </table>
+    <h1>Basic</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>DOB</th>
+        </tr>
+        <tr>
+            <td>Aritra</td>
+            <td>19</td>
+            <td>11-12-2001</td>
+        </tr>
+        <tr>
+            <td>Harshit</td>
+            <td>17</td>
+            <td>11-12-2003</td>
+        </tr>
+        <tr>
+            <td>Mtj</td>
+            <td>22</td>
+            <td>11-12-1998</td>
+        </tr>
+    </table>
+    <h1>Table with diff background</h1>
+    <table id="t01">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>DOB</th>
+        </tr>
+        <tr>
+            <td>aritra</td>
+            <td>19</td>
+            <td>11-12-2001</td>
+        </tr>
+        <tr>
+            <td>harshit</td>
+            <td>17</td>
+            <td>11-12-2003</td>
+        </tr>
+        <tr>
+            <td>mtj</td>
+            <td>22</td>
+            <td>11-12-1998</td>
+        </tr>
+    </table>
+    <h1>Table with head body and foot</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>Table nested in table</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>DOB</th>
+        </tr>
+        <tr>
+            <td>aritra</td>
+            <td>19</td>
+            <td>11-12-2001</td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Savings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>January</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                            <td>$80</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Sum</td>
+                            <td>$180</td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>harshit</td>
+            <td>17</td>
+            <td>11-12-2003</td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Savings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>January</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                            <td>$80</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Sum</td>
+                            <td>$180</td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>mtj</td>
+            <td>22</td>
+            <td>11-12-1998</td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Savings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>January</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                            <td>$80</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Sum</td>
+                            <td>$180</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
